@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culturama Search</title>
+  </head>
+  <body>
+    <header>
+      <h1>Online Search</h1>
+    </header>
+    <section>
+      <form action="" method="get">
+        <fieldset>
+          <!-- personal data -->
+          <legend>Personal data</legend>
+          <label for="user_name">Name</label>
+          <input type="text" name="userName" required />
+
+          <br />
+          <label for="age">Age</label>
+          <input type="number" name="age" min="12" max="100" required />
+
+          <br />
+          <label for="date_of_birth">Date of Birth</label>
+          <input type="date" name="date_of_birth" />
+
+          <br />
+          <label for="e-mail">E-mail</label>
+          <input type="email" name="e-mail" required />
+
+          <br />
+          <label for="user_phone_number">Phone Number</label>
+          <input
+            type="date"
+            name="user_phone_number"
+            pattern="[0-9]{11}"
+            placeholder="DDD + números sem espaços ou hífens"
+            required
+          />
+
+          <br />
+          <label for="user_image">Image</label>
+          <input type="file" name="user_image" required />
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
